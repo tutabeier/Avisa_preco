@@ -1,0 +1,12 @@
+<%= form_for @usuario, :url => { :action => 'do_signup' } do |f| %>
+	<%= f.label :nome %>
+  	<%= f.text_field :nome %>
+  	<br/>
+  	<%= f.label :email %>
+  	<%= f.text_field :email %>
+  	<br/>
+  	<%= f.label :senha %>
+  	<%= f.password_field :senha %>
+  	<br/>
+  	<%= f.submit 'Entrar' %>
+<% end %>

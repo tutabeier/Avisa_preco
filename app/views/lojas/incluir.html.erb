@@ -1,0 +1,9 @@
+<%= form_for @loja, :url => { :action => 'criar' }, :html => {:class => ''} do |f| %>
+  <%= f.label :nome %>
+  <%= f.text_field :nome %>
+  <br/>
+  <%= f.label :pattern_preco %>
+  <%= f.text_field :pattern_preco %>
+  <br/>
+  <%= f.submit 'Cadastrar' %>
+<% end %>

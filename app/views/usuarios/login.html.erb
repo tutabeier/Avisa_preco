@@ -1,0 +1,9 @@
+<%= form_for @usuario, :url => { :action => 'do_login' } do |f| %>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <br/>
+  <%= f.label :senha %>
+  <%= f.password_field :senha %>
+  <br/>
+  <%= f.submit 'Entrar' %>
+<% end %>
